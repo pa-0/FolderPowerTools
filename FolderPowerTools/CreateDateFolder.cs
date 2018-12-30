@@ -4,6 +4,7 @@ using SharpShell.SharpContextMenu;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using FolderPowerTools.Properties;
 
 namespace FolderPowerTools
 {
@@ -61,7 +62,7 @@ namespace FolderPowerTools
             {
                 var builder = new StringBuilder();
                 builder.AppendLine($"Greska prilikom kreiranja foldera {pathString}: {exception.Message}");
-                //MessageBox();
+                MessageBox.Show(builder.ToString(), Resources.CreateDateFolder_CreateFolder_ERROR_, MessageBoxButtons.OK);
             }
         }
     }

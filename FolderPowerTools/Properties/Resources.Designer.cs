@@ -69,5 +69,14 @@ namespace FolderPowerTools.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greška!.
+        /// </summary>
+        internal static string CreateDateFolder_CreateFolder_ERROR_ {
+            get {
+                return ResourceManager.GetString("CreateDateFolder_CreateFolder_ERROR_", resourceCulture);
+            }
+        }
     }
 }
